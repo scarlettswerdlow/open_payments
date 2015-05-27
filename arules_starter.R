@@ -72,7 +72,7 @@ graphNei <- function(graph, l, node, manu) {
   V(nei)$label.color <- "black"
   V(nei)$label.cex <- ifelse(V(nei)$name == node, 1, .01)
   par(mar=c(0,0,0,0)+.01)
-  plot(nei, edge.curved=T)
+  plot(nei, edge.curved=F)
 }
 
 

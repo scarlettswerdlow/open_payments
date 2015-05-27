@@ -43,3 +43,10 @@ plot(physg, vertex.label=NA, vertex.size=3, edge.curved=F)
 # Graph neighborhood around manufacturer with most degrees and betweenness
 graphNei(manug, 2, labels(manu_network$d[6]), T)
 graphNei(manug, 2, labels(manu_network$b[6]), T)
+
+# Graph neighborhood around manufacturer with most degrees and betweenness
+# These networks are so dense that the neighborhood plots are not helpful
+graphNei(physg, 2, labels(phys_network$d[6]), F)
+graphNei(physg, 2, labels(phys_network$b[6]), F)
+
+
